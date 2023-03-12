@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(111, 106, 104);
+            background-image: url(ewnbg.png);
+            background-repeat: no-repeat;
+            background-size: 100% ;
+            background-repeat: repeat-y;
+            position: relative;
+           
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .containerm {
+            display: flex;
+            border: 2px solid yellow;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+            display: inline;
+        }
+
+        .navcontainer {
+            /* border: 2px solid red;   */
+            /* background-color: rgb(112, 135, 188);  */
+            widows: 100%;
+            /* position: sticky; */
+            /* top: 0px; */
+            scroll-behavior: smooth;
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .navfloat1 {
+            margin-left: 2cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+        }
+
+        .navfloat1:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .navfloat2 {
+            margin-left: 2cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+        }
+
+        .navfloat2:hover {
+            color: rgb(230, 205, 205);
+            text-decoration: underline;
+            
+        }
+
+        .navfloat3 {
+            margin-left: 2cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+        }
+
+        .navfloat3:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .navfloat4 {
+            margin-left: 10cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+
+        }
+
+        .navfloat4:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+        .hoverc{
+      transition: all 0.3s;
+    }
+    .hoverc:hover{
+      transform: scale(1.15);
+      background-color: rgb(199, 205, 162);
+      background-image: url(er.gif);
+      color: rgb(0, 0, 0);
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="shadow p-3 mb-5 bg-body-tertiary rounded"> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navcontainer">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+                    <b><a href="game.html" class="navfloat4" style="color: rgb(251, 251, 251);">HOME</a></b>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- <a class="nav-link active navelfloat" aria-current="page" href="#">Home</a> -->
+                            <b><a href="" class="navfloat3" style="color: rgb(255, 255, 255);">MERCHANDISE</a></b>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#"></a> -->
+                            <!-- <b><a href="" class="navfloat2">BLOG</a></b> -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link disabled">HELP</a> -->
+                            <b><a href="game.html" class="navfloat1" style="color: rgb(255, 255, 255);">ABOUT</a></b>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link disabled">HELP</a> -->
+                            <b><a href="game.html" class="navfloat1" style="color: rgb(255, 255, 255);">SUPPORT</a></b>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success navelfloat" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-evenly; margin-top: 2cm;">
+        <div class="card mb-3 hoverc" style="max-width: 540px;float: left;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="bgmits.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">BATTLEGROUND MOBILE INDIA</h5>
+                        <p class="card-text">Buy all your favourites of <b> BGMI</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></small></p>
+                       <a href="https://tshirtsopedia.com/product-category/battlegrounds-t-shirt/"><button type="button" class="btn btn-primary">BUY NOW</button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 hoverc" style="max-width: 540px; float: right; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="cocts.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">CLASH OF CLANS</h5>
+                        <p class="card-text">Buy all your favourites of <b> CLASH OF CLANS</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span></small></p>
+                        <a href="https://ilogo.in/clash-of-clans-t-shirts"><button type="button" class="btn btn-primary">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-evenly; margin-top: 2cm;">
+        <div class="card mb-3 hoverc" style="max-width: 540px;float: left;">
+            <div class="row g-0">
+                <div class="col-md-4 ">
+                    <img src="mewts.webp" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">PUBG NEW STATE</h5>
+                        <p class="card-text">Buy all your favourites of <b> PUBG NEW STATE</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span></small></p>
+                       <a href="https://tshirtsopedia.com/product/pubg-new-state-official-hoodie/"><button type="button" class="btn btn-primary">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 hoverc" style="max-width: 540px; float: right; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="stublets.jpg" class="img-fluid rounded-start" style="height: 6.1cm;" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">STUMBLE GUYS</h5>
+                        <p class="card-text">Buy all your favourites of <b> STUMBLE GUYS</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></small></p>
+                        <a href="https://www.etsy.com/listing/1289558725/stumble-guys-t-shirt-stumble-guys-mobile"><button type="button" class="btn btn-primary">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-evenly; margin-top: 2cm;">
+        <div class="card mb-3 hoverc" style="max-width: 540px;float: left;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="valots.webp" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">VALORANT</h5>
+                        <p class="card-text">Buy all your favourites of <b> VALORANT</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></small></p>
+                        <a href="https://www.swagshirts99.com/product-category/valorant-t-shirt-and-merchandise/"><button type="button" class="btn btn-primary">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 hoverc" style="max-width: 540px; float: right; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="ffts.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">FREE FIRE</h5>
+                        <p class="card-text">Buy all your favourites of <b> FREE FIRE</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></small></p>
+                        <a href="https://teestheday.com/product-category/free-fire-t-shirt/"><button type="button" class="btn btn-primary">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-evenly; margin-top: 2cm;">
+        <div class="card mb-3 hoverc" style="max-width: 540px;float: left;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="codts.jpeg" style="height: 6.1cm;" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">CALL OF DUTY</h5>
+                        <p class="card-text">Buy all your favourites of <b> CALL OF DUTY</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></small></p>
+                        <a href="https://shop.callofduty.com/collections/t-shirts"><button type="button" class="btn btn-primary">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 hoverc" style="max-width: 540px; float: right; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="minii.jpeg" style="height: 6.1cm;" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">MINI MILATIA</h5>
+                        <p class="card-text">Buy all your favourites of <b> MINI MILATIA</b> online at this given platform. Explore tshirts, hoodies and more..</p>
+                        <p class="card-text"><small class="text-muted"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span></small></p>
+                        <a href="https://www.amazon.com/Doodle-Army-Mini-Militia-T-Shirt/dp/B07L9QMS7F"><button type="button" class="btn btn-primary">BUY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

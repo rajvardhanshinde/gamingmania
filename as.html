@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label:before{
+      cursor: pointer;
+      background-color: black;
+      transition: 0.4s;
+    }
+    label.active:before{
+      background-color: aliceblue;
+
+    }
+    body.night{
+      background-color: black;
+
+    }
+  </style>
+</head>
+<body>
+  <label id="dark-change"></label>
+  <script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkmode = document.getElementById('dark-change');
+    darkmode.addEventListener('click',function(){
+    darkmode.classList.toggle('active');
+    darkmode.classList.toggle('night');
+    })
+  </script>
+</body>
+</html>
