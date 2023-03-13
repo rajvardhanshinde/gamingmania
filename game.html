@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Bungee+Inline&family=Lora:ital,wght@1,700&family=Michroma&family=Mitr:wght@400;600&family=Nova+Square&family=Rubik+80s+Fade&family=Rubik+Maze&family=Russo+One&family=Tilt+Prism&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <title>7thgaming.com</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .containerm{
+            display: flex;
+            border: 2px solid yellow;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+            display: inline;
+        }
+        .navcontainer{
+            /* border: 2px solid red;   */
+             /* background-color: rgb(220, 43, 43);  */
+            position:sticky;
+            top: 0px;
+            scroll-behavior: smooth;
+            z-index: 5;
+            /* backface-visibility:hidden; */
+
+        }
+        *{
+          scroll-behavior: smooth;
+        }
+        .navfloat1{
+            margin-left: 2cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+        }
+        .navfloat1:hover{
+            color: grey;
+            text-decoration: underline;
+        }
+        .navfloat2{
+            margin-left: 2cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+        }
+        .navfloat2:hover{
+            color: grey;
+            text-decoration: underline;
+        }
+        .navfloat3{
+            margin-left: 2cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+        }
+        .navfloat3:hover{
+            color: grey;
+            text-decoration: underline;
+        }
+        .navfloat4{
+            margin-left: 10cm;
+            font-size: 0.7cm;
+            text-decoration: none;
+            display: inline;
+            color: white;
+
+        }
+        .navfloat4:hover{
+            color: grey;
+            text-decoration: underline;
+        }
+        .gtndcontainer{
+          /* border: 2px solid white; */
+          display: flex;
+          justify-content: center;
+        }
+        .gtndcontainer2{
+          /* border: 2px solid white; */
+          display: flex;
+          justify-content: center;
+          justify-content: space-evenly;
+          margin-right: -0cm;
+        }
+      .img1{
+        height: 18cm;
+        width: 70cm;
+      }
+      .imgc{
+        float: left;
+        height: 5cm;
+        width: 5cm;
+      }
+      .imgcr{
+        float: left;
+        height: 5cm;
+        width: 5cm;
+      }
+      .gtnd{
+        float: left;
+        font-size: 2cm;
+        margin-top: 1cm;
+        color: rgb(61, 223, 169);
+        font-family:'Rubik 80s Fade', cursive;
+        
+      }
+      .box1{
+        border: 2px solid white;
+        width: 6cm;
+        height: 7cm;
+        justify-content: center;
+        padding-top: 5cm;
+        color: orange;
+        display: flexbox;
+        background-image: url(https://apkresult.com/Logos/bgmi-15-0-apk-pavanresult.jpg);
+        background-size: 7cm 5cm;
+        background-repeat: no-repeat;
+        border-radius: 7cm;
+        width: 7cm;
+        height: 2cm;
+        
+      }
+      .box2{
+        border: 2px solid white;
+        width: 6cm;
+        height: 7cm;
+        justify-content: center;
+        padding-top: 5cm;
+        color: orange;
+        display: flexbox;
+        background-image: url(https://images6.alphacoders.com/109/1091961.jpg);
+        background-size: 7cm 5cm;
+        background-repeat: no-repeat;
+        border-radius: 7cm;
+        width: 7cm;
+        height: 2cm;
+        
+      }
+      .box3{
+        border: 2px solid white;
+        width: 6cm;
+        height: 7cm;
+        justify-content: center;
+        padding-top: 5cm;
+        color: orange;
+        display: flexbox;
+        background-image: url(https://images.alphacoders.com/109/1091086.jpg);
+        background-size: 7cm 5cm;
+        background-repeat: no-repeat;
+        border-radius: 7cm;
+        width: 7cm;
+        height: 2cm;
+        text-decoration: none;
+        
+      }
+      .bold{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: aliceblue;
+
+      }
+      .imgg{
+        width: 7cm;
+        height: 4cm;
+        float: left;
+        
+        /* padding-top: -23cm; */
+      }
+      .cod{
+        margin-top: 3cm;
+        width: 39.7cm;
+      }
+      #one{
+        /* border: 2px solid pink; */
+        float: left;
+        width: 17cm;
+        height: 17cm;
+        /* display: inline-block; */
+
+      }
+      .newcon{
+        /* border: 2px solid green; */
+        float: right;
+        width: 18cm;
+        display: inline;
+        height: 17cm;
+        margin-right:3cm;
+        /* display: inline-block; */
+      }
+      .nav:active::after{
+        color: gray;
+        text-decoration: none;
+      }
+      #two{
+        float: left;
+      }
+      
+      .bhoot{
+        width: 2cm;
+        padding-left: 1.3cm;
+        border: 4px solid white;
+      }
+      .mini{
+        width: 2cm;
+        padding-left: 1.3cm;
+      }
+      .mincard{
+        float:left ;
+        margin-left: 3cm;
+        /* border: 2px solid rgb(208, 110, 110); */
+        height: 9cm;
+        background-color: rgb(87, 79, 85);
+        color: aliceblue;
+        /* display: inline; */
+      }
+      .coccrd{
+        float: left;
+        /* border: 2px solid rgb(223, 223, 223); */
+        height: 9cm;
+        background-color: rgb(87, 79, 85);
+        color: aliceblue;
+        /* margin-left: 1cm; */
+        /* display: inline; */
+      }
+      .lite{
+        float: left;  
+        /* border: 2px solid rgb(208, 110, 110); */
+        height: 9cm;
+        background-color: rgb(87, 79, 85);
+        color: aliceblue;
+        margin-top: 1cm; 
+      }
+      .rcard{
+        float:left ;
+        margin-left: 3cm;
+        /* border: 2px solid rgb(208, 110, 110); */
+        height: 9cm;
+        background-color: rgb(87, 79, 85);
+        color: aliceblue;
+        margin-top: 1cm;
+        /* display: inline; */
+      }
+      .bor{
+        /* border: 2px solid red; */
+        color: aliceblue;
+        margin-left: 1cm;
+        font-size: x-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .about{
+        border: 2px solid red;
+        width: 10cm;
+        height: 12cm;
+        margin-left: 2cm;
+      }
+      .about1{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid pink;
+        width: 7cm;
+        height: 8cm;
+      }
+      .col{
+        color: aliceblue;
+      }
+      .container5{
+        display: flex;
+        flex-wrap: wrap;
+        display: inline;
+
+      }
+    .siz{
+      width: 4cm;
+      height: 5cm;
+    }
+    .abouty{
+      /* border: 2px solid red; */
+      color: white;
+      display: block;
+      margin-top: 18cm;
+      padding-left: 9cm;
+      padding-top: 1cm;
+      height: 12cm;
+      background-image: url(logo.png);
+      background-repeat: no-repeat;
+
+    }
+    .laast{
+      /* border: 2px solid white; */
+      background-color: rgb(185, 176, 194);
+      display: flex;
+      flex-wrap: wrap;
+      width: 39.7cm;
+      height: 17cm;
+      /* margin-top: 5cm; */
+    }    
+    .nav b a.active{
+      color: grey;
+      text-decoration: underline;
+    }
+    #supportr{
+      transition: 7s;
+    }
+    .hoverc{
+      transition: all 0.3s;
+    }
+    .hoverc:hover{
+      transform: scale(1.15);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .hovercc{
+      transition: all 0.3s;
+    }
+    .hovercc:hover{
+      transform: scale(1.15);
+      cursor: pointer;
+      /* text-decoration: none; */
+      background-color: brown;
+
+    }
+    .jk{
+      margin-top: -2.2cm;
+    }
+    @media screen and (max-width: 360px) {
+      .cod{
+        width: 360px;
+      }
+      
+    }
+    @media screen and (max-width: 360px) {
+      #one{
+        width: 360px;
+        height: 360px;
+      }
+      .gf{
+        width: 360px;
+        margin-left: 1cm;
+      }
+      .gf1{
+        width: 360px;
+        margin-left: 1cm;
+        /* break-after: always; */
+        margin-top: 0.5cm;
+      }
+      .gf2{
+        width: 360px;
+        margin-left: 1cm;
+        margin-top: 0.5cm;
+      }
+      .gf3{
+        width: 360px;
+        margin-left: 1cm;
+        /* break-after: always; */
+        margin-top: 0.5cm;
+      }
+      .bor{
+        margin-top: 0.5cm;
+        /* text-align: center; */
+        margin-left: 3.5cm;
+
+      }
+      .df{
+        width: 720px;
+        font-size: 1cm;
+        margin-left: 0.7cm;
+      }
+      .hg{
+        width: 3cm;
+        height: 3cm;
+      }
+      .container5{
+         width: 3cm;
+        height: 15cm;
+        margin-top: 0cm;
+      }
+      .jh{
+        font-size: 0.5cm;
+        margin-top: 13cm;
+        margin-left: -9cm;
+      }
+      .bv{
+        font-size: 0.3cm;
+        margin-left: -8.5cm;
+      }
+      .sd{
+        width: 360px;
+        margin-top: 15cm;
+        font-size: 0.2cm;
+
+      }
+      .tr{
+        width: 360px;
+        height: 360px;
+        
+      }
+      .yg{
+        width: 2cm;
+        height: 2cm;
+
+      }
+      .bold{
+        font-size: 0.3cm;
+      }
+      .a{
+        width: 1cm;
+        height: 1cm;
+      }
+      .b{
+        width: 1cm;
+        height: 1cm;
+      }
+      .c{
+        width: 1cm;
+        height: 1cm;
+      }
+      .box1{
+        background-size: 3cm 5cm;
+        width: 3cm;
+        height: 0.3cm;
+        margin-left: -1.4cm;
+      }
+      .box2{
+        background-size: 3cm 5cm;
+        width: 3cm;
+        height: 0.3cm;
+        margin-left: -0.6cm;
+      }
+      .box3{
+        background-size: 3cm 5cm;
+        width: 3cm;
+        height: 0.3cm;
+        margin-left: 0.2cm;
+      }
+      .fr{
+        font-size: 0.2cm;
+      }
+      .laast{
+        width: 360px;
+        height: 3cm;
+      }
+    }
+    .hg{
+      
+      text-decoration: none;
+    }
+    
+    .gf{
+      text-decoration: none;
+    }
+    
+    .gf1{
+      text-decoration: none;
+    }
+    .jh{
+      text-decoration: none;
+    }
+    .bv{
+      text-decoration: none;
+    }
+    .sd{
+      text-decoration: none;
+
+    }
+    
+    .tr{
+      text-decoration: none;
+
+    }
+    .yg{
+      text-decoration: none;
+
+    }
+    .a{
+      text-decoration: none;
+    }
+    .b{
+      text-decoration: none;
+    }
+    .c{
+      text-decoration: none;
+    }
+    .connect{
+      margin-left: 17cm;
+      margin-top: 1cm;
+      font-family:'Uncial Antiqua', cursive;
+      font-size: 1.3cm;
+      color: rgb(0, 0, 0)
+; 
+    }
+    .office{
+      margin-top: 5cm;
+      margin-left: 3cm;
+      font-family: 'Michroma', sans-serif;;
+
+    }
+    .ea{
+      margin-left: 15cm;
+      z-index: 3;
+      margin-top: -1.5cm;
+      font-family: 'Michroma', sans-serif;
+      color: rgb(0, 0, 0); 
+    }
+    .hn{
+      margin-left: 31cm;
+      z-index: 5;
+      margin-top: -1.5cm;
+      font-family: 'Michroma', sans-serif; 
+    color: rgb(0, 0, 0);       }
+    .cv{
+      margin-top: 4cm;
+      margin-left: 15cm;
+      font-family: 'Michroma', sans-serif;
+      color: rgb(0, 0, 0); 
+
+      
+    }
+    
+    </style>
+</head>
+<body>
+  <div class="row">
+
+  
+  <!-- <div class="shadow p-3 mb-5 bg-body-tertiary rounded"> -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navcontainer">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+        <b><a href="" class="navfloat4 nav ">HOME</a></b>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!-- <a class="nav-link active navelfloat" aria-current="page" href="#">Home</a> -->
+            <b><a href="merchandise.html" class="navfloat3 nav">MERCHANDISE</a></b>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#"></a> -->
+            <!-- <b><a href="" class="navfloat2">BLOG</a></b> -->
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled">HELP</a> -->
+            <b><a href="#aboutr" class="navfloat1">ABOUT</a></b>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled">HELP</a> -->
+            <b><a href="#supportr" class="navfloat1">SUPPORT</a></b>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-outline-light">Search</button>        </form>
+      </div>
+    </div>
+  </nav>
+  </div>
+    
+      <!-- <img src="https://th.bing.com/th/id/OIP.oGWZdOw5diljyyGLnbV89AHaEK?w=320&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="img-fluid img1" alt="..."></body> -->\
+      <div id="carouselExampleInterval" class="carousel slide jk " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2900">
+            <img src="1073337.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img src="mj.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2900">
+            <img src="65.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="tr">
+      <div class="gtndcontainer " id="spin">
+        <div><img src="fsf.png" class="img-fluid imgc hg" alt="..."></div>
+        <div class="gtnd df" >GAME IS ON</div>
+        <div><img src="fsf.png" class="img-fluid imgcr hg " alt="..."></div>
+      </div>
+      <div class="gtndcontainer2">
+        <div class="a">
+        <a href="BGMI.html" class="yg" style="text-decoration: none;"><div class="box1 hoverc "><b class="bold"><br> BATTLEGROUND MOBILE INDIA</b><br class="bold"><b class="fr">WHEN WORST COMES TO 
+          WROST SQUAD COME FIRST</b> </div></a>
+        </div>
+        <div class="b">
+          <a href="valorant.html" style="text-decoration: none;"><div class="box2 hoverc"><img src="" alt=""><b class="bold"><br><center class="bold">VALORANT</center> </b> <b class="fr">I WILL DEFEND YOU ALL WITH MY POWER AND WITH MY LIFE.</b> </div></a>
+        </div>
+        <div class="c">
+        <a href="freefire.html" style="text-decoration: none;"><div class="box3 hoverc"><img src="" alt=""><b class="bold"><br><center class="bold">FREE FIRE</center> </b><b class="fr">LEGENDS NEWER DIE, THEY RESWAPN & GET BHOOYAH..!</b> </div></a>
+      </div>
+
+
+      </div>
+    </div>
+      <!-- <div class="z-3 position-absolute p-5 rounded-3"><img src="wp9513055.webp" alt=""></div> -->
+      <!-- <img src="wp9513055.webp" class="rounded float-start imgg" alt="...">
+<img src="wp9513055.webp" class="rounded float-end imgg" alt="..."> -->
+<img src="MW2_Launch_CEA_X1_Wire_Hero_16x9-fd687e9075dac5ccc465.webp" class="cod" alt="">
+<div class="containerm">
+  <div><img src="uy.jpg"  id="one" class="siz" alt=""></div><br><br>
+  
+</div>
+<div class="card coccrd hoverc gf"  style="width: 18rem;" >
+  <img src="cocgiff.gif" class="card-img-top coccrd" style="height: 4.2cm;" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-family:Georgia, 'Times New Roman', Times, serif;">Clash of clans</h5>
+    <p class="card-text">Match Day: 12 July 2023 <br>Register Before: 27 june 2023</p>
+    <a href="coc.html" class="btn btn-primary">Register Now</a>
+  </div>
+  
+</div>
+<div class="card mincard hoverc gf1" id="gm" style="width: 18rem;">
+  <img src="minigiff.gif" style="height: 4.2cm;" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-family:Georgia, 'Times New Roman', Times, serif;">Mini Milatia</h5>
+    <p class="card-text">Match Day: 17 July 2023 <br>Register Before: 27 june 2023</p>
+    <a href="mini milatia.html" class="btn btn-primary">Register Now</a>
+  </div>
+</div>
+<br>
+
+<div class="card lite hoverc gf2 " style="width: 18rem;">
+  <img src="bgmigif.gif" style="height:100%;" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-family:Georgia, 'Times New Roman', Times, serif;"> Battleground Mobile India <br></h5>
+    <p class="card-text">Match Day: 25 July 2023<br>Register Before: 27 june 2023</p>
+    <a href="BGMI.html" class="btn btn-primary">Register Now</a><br>
+  </div>
+  <br>
+</div>
+
+<div class="card rcard hoverc gf3 " style="width: 18rem;">
+  <img src="stumblegif.gif" style="height: 4.1cm;" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-family:Georgia, 'Times New Roman', Times, serif;">Stumble Guys</h5>
+    <p class="card-text">Match Day: 31 July 2023<br>Register Before: 27 june 2023</p>
+    <a href="stumble.html" class="btn btn-primary">Register Now</a>
+  </div>
+</div>
+<div></div>
+<a href="more.html" target="_blank" rel="noopener noreferrer" class="bor"><b style="border: 2px solid rgb(229, 93, 93); color: black;background-color: aliceblue; ">More...</b> </a>
+<br><br>
+<div class="container5 abouty" id="aboutr"><b>
+  <h2> <center style="font-family: 'Nova Square', cursive;" class="jh"> 7th GAMING PLATFORM</center></h2>
+  <p style="font-family: 'Alice', serif;" class="bv">7th gaming is an online platform that brings to you various multiplayer games. 
+  <p style="font-family: 'Alice', serif;" class="bv">7th gaming is an online platform that brings to you various multiplayer games. 
+  We are the first ones that provide top 7 famous games on a single site.
+  These games include Call Of Duty, Clash Of Clans, BattleGround Mobile India, Stumble Guys, Valorant, PUBG NewState, Mini Milatia and FreeFire. We aim to create a hybrid gaming environment where various squads will first register and play on our online platform. Once they start playing and winning the matches, they would gain points and credits. On the basis of these credits, after achieiving the required number of points, top teams will be selected and called up for an offline tournament at our head office. Online registration and playing is free of cost but offline tournament will have some negligible entry fees. The teams that would win at the offline tournament will receive various swags and hampers. The prize pool will be announced before few days of the offline tournament. </p> 
+  <p style="font-family: 'Alice', serif;" class="bv">
+  Teams just need to register themselves and further all details will be communicated to the team personally by our facilitators. Entire communication will be held through the team’s mails. 
+  The squad will be provided with the timing details, opponent details and the link to start the battle. Teams cannot directly apply for the offline matches. Reaching the required limit of credits is a compulsion for offline participation. So at first, the teams should play and win good on the online platform. If the teams and players have any doubt or query regarding anything, then they can contact our facilitators on the below given contact sites. Follow 7th gaming on twitter, facebook, youtube and instagram. Let us togetherly make it India's largest hybrid gaming platform. </p>
+</b></div><br>
+  <div class="laast sd" id="supportr">
+    <!-- <pre style="font-size: xx-large; margin-top: 1.5cm; color: rgb(201, 85, 43); font-family: 'Courier New', Courier, monospace; font-size: 1.5cm;" >
+                 <b> CONNECT</b> 
+    </pre>
+    <pre>
+     <b style="font-size:x-large; font-family: 'Courier New', Courier, monospace; color: orange;">Main office</b>                                                                    <b style="font-size:x-large; font-family: 'Courier New', Courier, monospace; color: orange;">Email Address</b>                                            <b style="font-size:x-large; font-family: 'Courier New', Courier, monospace; color: orange;">Helpline No</b>
+   <b style="font-size: large; color: white;">  Karvenagar,pune  </b>                                                             <b style="font-size: large;  color: white;" >  crispymanager111@gmail.com    </b>                                    <b style="font-size: large;  color: white;"> 1245789635</b>
+    </pre>
+    <br>
+    <pre style="margin-left: 16cm;">
+
+
+
+ 
+
+      <a href="https://twitter.com/i/flow/login" class="hoverc" style="text-decoration: none;"><img src="twiter.png" class="hoverc" style="border: 1px; border-radius: 10px; height: 1cm; ">  </a><a href="https://www.facebook.com/" class="hoverc"><img src="op.png" class="hoverc" style="border: 1px; border-radius: 0px; height: 1cm;" alt=""></a>  <a href="https://youtu.be/UcPwqgl2OpI" class="hoverc"><img src="kl.png" class="hoverc"style="border: 1px; border-radius: 10px; height: 1cm; text-decoration: none;"  alt=""></a>  <a href="https://instagram.com/my_name_rj007?igshid=ZDdkNTZiNTM=" class="hoverc" ><img src="whiteinsta.png" class="hoverc" style="border: 1px; border-radius: 10px; height: 1cm; text-decoration: none;" alt=""></a>
+      <br>
+      <br><br>
+    </pre>-->
+
+    <div class="connect">CONNECT</div>
+    <div class="office">MAIN OFFICE <br>karvenagar,Pune <div class="ea">EMAIL ADDRESS <br>7thgaming@gmail.com</div> <div class="hn">HELPLINE NO. <br>9876547778</div><div class="cv"><a href="https://twitter.com/i/flow/login" class="hoverc" style="text-decoration: none;"><img src="twiter.png" class="hoverc" style="border: 1px; border-radius: 10px; height: 1cm; ">  </a><a href="https://www.facebook.com/" class="hoverc"><img src="op.png" class="hoverc" style="border: 1px; border-radius: 0px; height: 1cm;" alt=""></a>  <a href="https://youtu.be/UcPwqgl2OpI" class="hoverc"><img src="kl.png" class="hoverc"style="border: 1px; border-radius: 10px; height: 1cm; text-decoration: none;"  alt=""></a>  <a href="https://instagram.com/my_name_rj007?igshid=ZDdkNTZiNTM=" class="hoverc" ><img src="whiteinsta.png" class="hoverc" style="border: 1px; border-radius: 10px; height: 1cm; text-decoration: none;" alt=""></a></div></div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+  </div>
+</html>
